@@ -2,6 +2,8 @@
 layout: home
 author_profile: true
 title: 환영합니다
+pagination:
+  enabled: true
 ---
 
 # Max의 개발 블로그에 오신 것을 환영합니다!

@@ -83,6 +83,9 @@ author:
     - label: 'GitHub'
       icon: 'fab fa-fw fa-github'
       url: 'https://github.com/sangou1270'
+    - label: 'Email'
+      icon: 'fas fa-fw fa-envelope'
+      url: 'mailto:your.email@example.com'
 
 # 사이트 푸터 설정
 footer:
@@ -90,6 +93,9 @@ footer:
     - label: 'GitHub'
       icon: 'fab fa-fw fa-github'
       url: 'https://github.com/sangou1270'
+    - label: 'Email'
+      icon: 'fas fa-fw fa-envelope'
+      url: 'mailto:your.email@example.com'
 
 # 카테고리 설정
 category_archive:
