@@ -1,5 +1,6 @@
 ---
 layout: home
+author_profile: true
 title: 환영합니다
 ---
 
@@ -10,7 +11,9 @@ title: 환영합니다
 ## 최근 포스트
 
 {% for post in site.posts limit:3 %}
+
 ### [{{ post.title }}]({{ post.url | relative_url }})
+
 {{ post.date | date: "%Y년 %m월 %d일" }}
 
 {{ post.excerpt }}
@@ -18,4 +21,5 @@ title: 환영합니다
 [더 읽기]({{ post.url | relative_url }})
 
 ---
+
 {% endfor %}

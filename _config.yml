@@ -1,35 +1,67 @@
 title: Max의 개발 블로그
+tagline: 기술과 생각을 공유하는 공간
 description: AI, 비즈니스 모델, 코딩 교육에 관한 개인 블로그
 email: your.email@example.com
-baseurl: ""
-url: "https://sangou1270.github.io"
-github_username: sangou1270
+baseurl: ''
+url: 'https://sangou1270.github.io'
+logo: '/assets/images/logo.png'
+repository: 'sangou1270/sangou1270.github.io'
 
-# Jekyll 테마 설정
-theme: minima
+# 소셜 미디어 설정
+twitter_username:
+github_username: sangou1270
+facebook_username:
+linkedin_username:
+
+# 테마 설정
+theme: minimal-mistakes-jekyll
+minimal_mistakes_skin: 'dark' # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # 페이지네이션 설정
-paginate: 5
-paginate_path: "/page:num/"
+paginate: 10
+paginate_path: '/page:num/'
 
 # 포스트 URL 형식
 permalink: /:year/:month/:day/:title/
 
 # 기본 Front Matter 설정
 defaults:
-  - 
-    scope:
-      path: ""
-      type: "posts"
+  # _posts
+  - scope:
+      path: ''
+      type: posts
     values:
-      layout: "post"
-      author: "sangou1270"
-      
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+      show_date: true
+      toc: true
+      toc_sticky: true
+  # _pages
+  - scope:
+      path: '_pages'
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+
+# 검색 설정
+search: true
+search_full_content: true
+
 # 마크다운 엔진 설정
 markdown: kramdown
 kramdown:
   input: GFM
   syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: 'highlight'
+    block:
+      line_numbers: true
+      start_line: 1
 
 # 플러그인 설정
 plugins:
@@ -37,6 +69,43 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-paginate
+  - jekyll-archives
+  - jekyll-include-cache
+
+# 저자 정보
+author:
+  name: 'Max'
+  bio: '개발자이자 AI 엔지니어, 최신 기술과 비즈니스 모델에 관심이 많습니다.'
+  avatar: '/assets/images/bio-photo.jpg'
+  links:
+    - label: 'GitHub'
+      icon: 'fab fa-fw fa-github'
+      url: 'https://github.com/sangou1270'
+
+# 사이트 푸터 설정
+footer:
+  links:
+    - label: 'GitHub'
+      icon: 'fab fa-fw fa-github'
+      url: 'https://github.com/sangou1270'
+
+# 카테고리 설정
+category_archive:
+  type: jekyll-archives
+  path: /categories/
+tag_archive:
+  type: jekyll-archives
+  path: /tags/
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layouts:
+    category: archive-taxonomy
+    tag: archive-taxonomy
+  permalinks:
+    category: /categories/:name/
+    tag: /tags/:name/
 
 # 제외할 파일/폴더
 exclude:
@@ -45,3 +114,5 @@ exclude:
   - node_modules
   - vendor
   - .gitignore
+  - .jekyll-cache
+  - .sass-cache
