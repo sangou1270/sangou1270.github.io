@@ -5,8 +5,10 @@ _site/
 .jekyll-metadata
 
 # Bundler 관련 파일
-.bundle/
-vendor/
+# .bundle/
+# vendor/
+# vendor/bundle/
+/vendor/bundle/
 
 # Ruby 버전 파일
 .ruby-version
