@@ -14,7 +14,8 @@ facebook_username:
 linkedin_username:
 
 # 테마 설정
-theme: minimal-mistakes-jekyll
+# theme: minimal-mistakes-jekyll
+remote_theme: 'mmistakes/minimal-mistakes@4.24.0'
 minimal_mistakes_skin: 'dark' # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # 페이지네이션 설정
@@ -71,6 +72,7 @@ plugins:
   - jekyll-paginate
   - jekyll-archives
   - jekyll-include-cache
+  - jekyll-remote-theme
 
 # 저자 정보
 author:
