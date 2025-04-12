@@ -1,30 +1,30 @@
-# macOS
+# Jekyll 생성 파일
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Bundler 관련 파일
+.bundle/
+vendor/
+
+# Ruby 버전 파일
+.ruby-version
+
+# macOS 파일
 .DS_Store
 .AppleDouble
 .LSOverride
 Icon
 ._*
 
-# Windows
+# Windows 파일
 Thumbs.db
 ehthumbs.db
 Desktop.ini
 
-# Jekyll
-_site/
-.sass-cache/
-.jekyll-cache/
-.jekyll-metadata
-
-# VS Code
+# VS Code 설정
 .vscode/
 
-# Node.js
-node_modules/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# 개인 설정 파일
-*.local
-.env
+# 로그 파일
+*.log

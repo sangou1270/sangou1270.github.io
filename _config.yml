@@ -1,0 +1,47 @@
+title: sangou1270의 블로그
+description: GitHub Pages와 Jekyll로 만든 블로그
+email: your.email@example.com
+baseurl: ""
+url: "https://sangou1270.github.io"
+github_username: sangou1270
+
+# Jekyll 테마 설정
+theme: minima
+
+# 페이지네이션 설정
+paginate: 5
+paginate_path: "/page:num/"
+
+# 포스트 URL 형식
+permalink: /:year/:month/:day/:title/
+
+# 기본 Front Matter 설정
+defaults:
+  - 
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "sangou1270"
+      
+# 마크다운 엔진 설정
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# 플러그인 설정
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate
+
+# 제외할 파일/폴더
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .gitignore
